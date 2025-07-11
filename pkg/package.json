@@ -1,0 +1,19 @@
+{
+  "name": "@sorellalabs/angstrom-bundle-decode",
+  "type": "module",
+  "version": "1.0.4",
+  "files": [
+    "rs_bundle_decode_bg.wasm",
+    "rs_bundle_decode.js",
+    "rs_bundle_decode.d.ts"
+  ],
+  "main": "rs_bundle_decode.js",
+  "types": "rs_bundle_decode.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SorellaLabs/wasm-angstrom-bundle-decode.git"
+  }
+}
