@@ -23,5 +23,9 @@
     "vite": "^7.0.4",
     "vite-plugin-wasm": "^3.5.0",
     "@types/node": "^20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-user/repo-url.git"
   }
 }
