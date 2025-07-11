@@ -29,15 +29,3 @@ async function runDecode() {
 }
 
 runDecode();
-
-
-
-
-// Initialize WASM and decode - Test function
-async function testDecodeBundle() {
-    await init();
-    const bundleDecoded = decode_bundle(encodedBundle);
-    const bundleObj = JSON.parse(bundleDecoded);
-    console.log(bundleObj);
-    return bundleObj;
-}

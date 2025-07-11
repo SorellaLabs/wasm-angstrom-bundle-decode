@@ -15,6 +15,12 @@ pub fn decode_bundle(s: String) -> String {
 fn _decode_bundle(s: String) -> Result<String, String> {
     let hex_str = s.strip_prefix("0x").unwrap_or(&s);
 
+    if !hex_str.starts_with("09c5eabe") {
+        return Err(format!(
+            "invalid string must start with function selector: `0x09c5eabe` or 09c5eabe"
+        ));
+    }
+
     let bundle_bytes_ext = hex::decode(hex_str).map_serde_err()?;
     let bundle_bytes = bundle_bytes_ext[(4 + 32 + 32)..].to_vec();
 
