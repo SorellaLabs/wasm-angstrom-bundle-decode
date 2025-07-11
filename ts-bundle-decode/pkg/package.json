@@ -1,0 +1,15 @@
+{
+  "name": "rs-bundle-decode",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "rs_bundle_decode_bg.wasm",
+    "rs_bundle_decode.js",
+    "rs_bundle_decode.d.ts"
+  ],
+  "main": "rs_bundle_decode.js",
+  "types": "rs_bundle_decode.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

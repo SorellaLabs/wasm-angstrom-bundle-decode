@@ -1,4 +1,4 @@
-import init, { decode_bundle } from "../rs-bundle-decode/pkg/rs_bundle_decode.js";
+import init, { decode_bundle } from "./pkg/rs_bundle_decode.js";
 
 export async function decodeBundle(encodedBundle: string): Promise<any> {
     await init();

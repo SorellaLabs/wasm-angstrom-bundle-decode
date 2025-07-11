@@ -6,6 +6,9 @@ if [ ! -d "rs-bundle-decode" ]; then
     exit 1
 fi
 
+cp -r rs-bundle-decode/pkg ts-bundle-decode/pkg
+rm ts-bundle-decode/pkg/.gitignore
+
 wasm-pack build --target web rs-bundle-decode
 # if the above command fails, exit
 if [ $? -ne 0 ]; then
@@ -25,3 +28,4 @@ if [ $? -ne 0 ]; then
     echo "Error: npm start failed"
     exit 1
 fi
+
