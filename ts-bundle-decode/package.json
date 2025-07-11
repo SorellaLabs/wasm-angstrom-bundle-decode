@@ -1,7 +1,7 @@
 {
-  "name": "ts-bundle-decode",
-  "version": "1.0.0",
-  "description": "A library to decode Ethereum bundles",
+  "name": "angstrom-bundle-decode",
+  "version": "1.0.1",
+  "description": "A library to decode Angstrom bundles",
   "license": "ISC",
   "author": "",
   "type": "module",
