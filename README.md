@@ -9,16 +9,9 @@ curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
 ```
 
 
-### Steps
+### Build and Run
+From the root of the project directory:
 
-1. Build the rust code:
 ```bash
-cd rs-bundle-decode
-wasm-pack build --target bundler
-```
-
-2. Install deps in the typescript code:
-```bash
-cd ts-bundle-decode
-npm i
+./build-test.sh
 ```

@@ -22,6 +22,7 @@ if [ ! -d "ts-bundle-decode" ]; then
     exit 1
 fi
 
+npm i --prefix ts-bundle-decode
 npm run build --prefix ts-bundle-decode
 # if the above command fails, exit
 if [ $? -ne 0 ]; then
