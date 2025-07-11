@@ -10,16 +10,16 @@ async function runDecode() {
         // Initialize the WASM module
         await init();
         console.log("WASM module initialized successfully");
-        
+
         // Now we can call decode_bundle
         console.log("Decoding bundle...");
         const bundleDecoded = decode_bundle(encodedBundle);
         console.log("Bundle decoded:", bundleDecoded);
-        
+
         // Parse and pretty print the JSON
         const bundleObj = JSON.parse(bundleDecoded);
         const prettyJson = JSON.stringify(bundleObj, null, 2);
-        
+
         // Set the result onto the body
         document.body.innerHTML = `<pre>Decoded Bundle JSON:\n${prettyJson}</pre>`;
     } catch (error) {
@@ -29,3 +29,15 @@ async function runDecode() {
 }
 
 runDecode();
+
+
+
+
+// Initialize WASM and decode - Test function
+async function testDecodeBundle() {
+    await init();
+    const bundleDecoded = decode_bundle(encodedBundle);
+    const bundleObj = JSON.parse(bundleDecoded);
+    console.log(bundleObj);
+    return bundleObj;
+}
